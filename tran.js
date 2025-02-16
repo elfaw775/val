@@ -10,7 +10,11 @@ let imagearray = ["./pic/1.jpg", "./pic/2.jpg", "./pic/3.jpg",
 let par = ["", "? 你认真的吗", "要不再想想", "不许选这个!", "我会很伤心..."]
 let move = 20
 
-
+// 预加载图片
+imagearray.forEach(src => {
+    const img = new Image();
+    img.src = src;
+});
 
 
 btnl.addEventListener('click', function() {
